@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monster_minigame</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        let monsterHP = 100
+        const container = document.getElementById('container')
+        const h1 = document.createElement('h1')
+        h1.textContent = "monster game start"
+        container.appendChild(h1)
+
+        let attackDamage = parseInt(prompt("first attack damage?"))
+        let attackCount = 0
+
+        if(attackDamage > 0){
+            while(monsterHP > 0 ){
+            monsterHP -= attackDamage
+            attackCount += 1
+
+            const p = document.createElement("p")
+            p.textContent = `monseter ${attackCount} attack him`
+            container.append(p)
+            const strong = document.createElement('strong')
+            strong.textContent = `monsterHP is ${monsterHP}`
+            container.append(strong)
+        }
+        const h2 = document.createElement('h2')
+        h2.textContent = 'moster game end good game'
+        h2.style.color='red'
+        h2.title = 'Do you want game again? refresh the in site'
+        container.appendChild(h2)
+        }else{
+            alert('dmage input no enter')
+        }
+    </script>
+</body>
+</html>

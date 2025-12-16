@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크하시오.</p>
+    </header><hr>
+    <hr>
+    <main>
+    <form>
+        <form action="" method=""
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="name">이름</label>
+            <input type="text" 
+            name="name"
+            id="name" placeholder="본명을 입력">
+            <br>
+            <label for="email">이메일</label>
+            <input type="email" 
+            name="name"
+            id="email"
+            placeholder="메일 주소 입력">
+        </fieldset>
+        <fieldset>
+            <legend>설문</legend>
+            <p>연령대가 어떻게 되십니까?</p>
+            <input type="radio" id="teen" name="age">
+            <label for="teen">10대</label>
+            <input type="radio" id="twenty" name="age">
+            <label for="twenty">20대</label>
+            <input type="radio" id="thirty" name="age">
+            <label for="thirty">30대</label>
+            <input type="radio" id="fourty" name="age">
+            <label for="fourty">40대</label>
+            <input type="radio" id="fifty" name="age">
+            <label for="fifty">50대</label>
+            <input type="radio" id="orther" name="age">
+            <label for="orther">늙은이</label>
+            <br>
+            <table border="1">
+                <caption>
+                    학원 표
+                </caption>
+                <tr>
+                    <th>학원이름</th>
+                    <th>위치</th>
+                    <th>학원비</th>
+                    <th>시설</th>
+                </tr>
+                <tr>
+                    <td>오즈</td>
+                    <td>강남</td>
+                    <td>비쌈</td>
+                    <td>고급</td>
+                </tr>
+                <tr>
+                    <td>부트캠프</td>
+                    <td>서울</td>
+                    <td>중간</td>
+                    <td>중간</td>
+                </tr>
+            </table>
+
+            <p>학원 선택 시 그 기준은 어떻게 되시나요?</p>
+            <input type="checkbox" id="location" name="academy">
+            <label for="academy">위치</label>
+            <input type="checkbox" id="pay" name="academy">
+            <label for="pay">학원비</label>
+            <input type="checkbox" id="teacher" name="academy">
+            <label for="teacher">강사</label>
+            <input type="checkbox" id="place" name="academy">
+            <label for="place">시설</label>
+            <input type="checkbox" id="job" name="academy">
+            <label for="job">취업</label>
+        </fieldset>
+        <fieldset>
+            <legend>기타의견</legend>
+            <textarea rows="2" cols="30" 
+            name="comment"></textarea>
+        </fieldset>
+        <input type="submit">
+    </form>
+    </main>
+    <hr>
+    <footer>
+        <p>수고 하셨습니다.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Nanum Gothic Round', 'Noto Sans KR', sans-serif;
+}
+#container {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff
+}
+
