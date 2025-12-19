@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>games</title>
+</head>
+<body>
+    <h1>Game list</h1>
+    <ul>
+            {% for game in games %}
+            {% if game == "GTA 6" %}
+                <li>이번에 나온 {{ game }} 퀄리티 대박</li>
+                {% else %}
+                <li>옛날거 {{ game }}</li>
+                {% endif %}
+            {% endfor %}
+    </ul>
+</body>
+</html>
